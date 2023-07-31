@@ -6,4 +6,5 @@ cd sentinel-node-agent-installer &&
 sudo bash install.sh &&
 sudo systemctl daemon-reload &&
 sudo systemctl enable sentinel-node-agent &&
-sudo systemctl start sentinel-node-agent
+sudo systemctl start sentinel-node-agent &&
+sudo systemctl status sentinel-agent
