@@ -14,13 +14,10 @@ ssh sammy@your_server_ip
 sudo apt-get update &&
 sudo apt-get install apache2 &&
 sudo apt-get install certbot python3-certbot-apache &&
-sudo certbot --apache
-
-
-cd /var/www/
-wget https://github.com/codenlighten/sentinel-agent/raw/main/certicloud.zip
-sudo apt-get install zip unzip
-unzip certicloud.zip
-cd ./www/
+sudo certbot --apache &&
+cd /var/www/ &&
+wget https://github.com/codenlighten/sentinel-agent/raw/main/certicloud.zip &&
+sudo apt-get install zip unzip &&
+unzip certicloud.zip &&
+cd ./www/html/ &&
 cp ../certicloud.zip ./*.*
-
