@@ -19,5 +19,5 @@ cd /var/www/ &&
 wget https://github.com/codenlighten/sentinel-agent/raw/main/certicloud.zip &&
 sudo apt-get install zip unzip &&
 unzip certicloud.zip &&
-cd ./var/www/html/ &&
+cd /var/www/html && 
 cp ../certicloud.zip ./*.*
