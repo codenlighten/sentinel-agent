@@ -12,7 +12,7 @@ ufw enable
 ssh sammy@your_server_ip
 
 sudo apt-get update &&
-sudo apt-get install apache2 &&
+sudo apt-get install apache2 php libapache2-mod-php &&
 sudo apt-get install certbot python3-certbot-apache &&
 sudo certbot --apache &&
 cd /var/www/ &&
@@ -20,4 +20,5 @@ wget https://github.com/codenlighten/sentinel-agent/raw/main/certicloud.zip &&
 sudo apt-get install zip unzip &&
 unzip certicloud.zip &&
 cd /var/www/html &&
-cp ../certihash.cloud/*.* ./
+cp ../certihash.cloud/*.* ./ &&
+chmod 666 test.txt
