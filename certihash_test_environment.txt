@@ -6,7 +6,7 @@ usermod -aG sudo sammy
 
 ufw allow OpenSSH
 ufw allow 80
-allow 443
+ufw allow 443
 ufw enable
 
 ssh sammy@your_server_ip
