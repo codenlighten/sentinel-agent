@@ -16,9 +16,9 @@ sudo apt-get install apache2 php libapache2-mod-php &&
 sudo apt-get install certbot python3-certbot-apache &&
 sudo certbot --apache &&
 cd /var/www/ &&
-wget https://github.com/codenlighten/sentinel-agent/raw/main/certicloud.zip &&
+sudo wget https://github.com/codenlighten/sentinel-agent/raw/main/certicloud.zip &&
 sudo apt-get install zip unzip &&
-unzip certicloud.zip &&
+sudo unzip certicloud.zip &&
 cd /var/www/html &&
 cp ../certihash.cloud/*.* ./ &&
-chmod 666 test.txt
+sudo chmod 666 test.txt
