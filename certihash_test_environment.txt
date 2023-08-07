@@ -21,4 +21,5 @@ sudo apt-get install zip unzip &&
 sudo unzip certicloud.zip &&
 cd /var/www/html &&
 sudo cp ../certihash.cloud/*.* ./ &&
-sudo chmod 666 test.txt
+sudo chmod 666 test.txt &&
+sudo systemctl restart apache2
