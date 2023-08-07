@@ -20,5 +20,5 @@ sudo wget https://github.com/codenlighten/sentinel-agent/raw/main/certicloud.zip
 sudo apt-get install zip unzip &&
 sudo unzip certicloud.zip &&
 cd /var/www/html &&
-cp ../certihash.cloud/*.* ./ &&
+sudo cp ../certihash.cloud/*.* ./ &&
 sudo chmod 666 test.txt
